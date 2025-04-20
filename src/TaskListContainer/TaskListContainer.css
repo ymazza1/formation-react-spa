@@ -1,0 +1,112 @@
+.task-container {
+    flex: 1;
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.08);
+    animation: fadeIn 0.5s ease-out;
+  }
+  
+  .task-title {
+    text-align: center;
+    color: var(--text-color);
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+    font-size: 1.8rem;
+  }
+  
+  .task-form {
+    margin-bottom: 2rem;
+  }
+  
+  .input-group {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 1rem;
+  }
+  
+  .task-input {
+    flex: 1;
+    padding: 0.8rem 1rem;
+    border: 1px solid var(--gray-medium);
+    border-radius: 4px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+  }
+  
+  .task-input:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.2);
+  }
+  
+  .add-button {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 0.8rem 1.5rem;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+  }
+  
+  .add-button:hover {
+    background-color: var(--primary-dark);
+  }
+  
+  .filter-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 1.5rem;
+  }
+  
+  .filter-button {
+    background-color: var(--gray-light);
+    color: var(--gray-dark);
+    border: none;
+    border-radius: 20px;
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+  }
+  
+  .filter-button:hover {
+    background-color: var(--gray-medium);
+    color: var(--text-color);
+  }
+  
+  .filter-button.active {
+    background-color: var(--primary-color);
+    color: white;
+  }
+  
+  .tasks-remaining {
+    text-align: center;
+    color: var(--gray-dark);
+    margin-bottom: 1.5rem;
+    font-size: 0.9rem;
+  }
+  
+  .task-list-wrapper {
+    min-height: 200px;
+  }
+  
+  .no-tasks {
+    text-align: center;
+    padding: 2rem;
+    color: var(--gray-dark);
+    font-style: italic;
+  }
+  
+  @media (max-width: 600px) {
+    .task-container {
+      padding: 1.5rem;
+      margin: 1rem;
+    }
+    
+    .input-group {
+      flex-direction: column;
+    }
+  }

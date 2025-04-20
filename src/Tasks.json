@@ -1,0 +1,26 @@
+[
+    {
+      "id": 1,
+      "title": "Apprendre les bases de React",
+      "description": "Étudier les composants, props et state",
+      "done": false
+    },
+    {
+      "id": 2,
+      "title": "Créer un composant fonctionnel",
+      "description": "Implémenter un composant avec des hooks",
+      "done": true
+    },
+    {
+      "id": 3,
+      "title": "Styliser l'application",
+      "description": "Ajouter du CSS pour améliorer l'interface utilisateur",
+      "done": false
+    },
+    {
+      "id": 4,
+      "title": "Implémenter la gestion d'état",
+      "description": "Utiliser useState et useEffect",
+      "done": false
+    }
+  ]
