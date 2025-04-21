@@ -25,7 +25,7 @@ function Footer({name}){
           <a href="#" aria-label="Email">
             <Mail size={20} />
           </a>
-        </div>
+          </div>
         </div>
       </footer>
     )

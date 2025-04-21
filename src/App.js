@@ -9,6 +9,7 @@ import NotFound from './pages/NotFound/NotFound';
 
 function App() {
   return (
+    <Router>
     <div className="App">
       <Header/>
       <Routes>
@@ -17,9 +18,9 @@ function App() {
             <Route path="/task/:id" element={<TaskDetails />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
-      <TaskListContainer/>
       <Footer name={"Yoann Mazza"} />
     </div>
+    </Router>
   );
 }
 
