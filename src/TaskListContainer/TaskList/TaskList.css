@@ -62,6 +62,13 @@
     margin-top: 0.3rem;
   }
   
+
+  .task-actions {
+    display: flex;
+    gap: 5px;
+  }
+  
+  .view-button,
   .delete-button {
     background: none;
     border: none;
@@ -70,6 +77,26 @@
     border-radius: 4px;
     opacity: 0.6;
     transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .view-button {
+    color: var(--gray-medium);
+    text-decoration: none;
+  }
+  
+  .view-button:hover {
+    color: var(--primary-color);
+    background-color: rgba(52, 152, 219, 0.1);
+    opacity: 1;
+  }
+  
+  .delete-button:hover {
+    color: var(--accent-color);
+    background-color: rgba(231, 76, 60, 0.1);
+    opacity: 1;
   }
   
   .delete-button:hover {

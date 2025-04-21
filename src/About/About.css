@@ -1,0 +1,111 @@
+.about-container {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.08);
+    animation: fadeIn 0.5s ease-out;
+  }
+  
+  .about-title {
+    text-align: center;
+    color: var(--text-color);
+    margin-bottom: 2rem;
+    font-weight: 600;
+    font-size: 1.8rem;
+    position: relative;
+  }
+  
+  .about-title::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background-color: var(--primary-color);
+    border-radius: 2px;
+  }
+  
+  .about-content {
+    margin-top: 1.5rem;
+  }
+  
+  .about-section {
+    margin-bottom: 2rem;
+  }
+  
+  .about-section h3 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
+    font-weight: 500;
+  }
+  
+  .about-section p {
+    line-height: 1.6;
+    color: var(--text-color);
+  }
+  
+  .feature-list {
+    padding-left: 1.5rem;
+    margin-top: 0.5rem;
+  }
+  
+  .feature-list li {
+    margin-bottom: 0.5rem;
+    position: relative;
+  }
+  
+  .feature-list li::before {
+    content: "•";
+    color: var(--primary-color);
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+  }
+  
+  .tech-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1rem;
+  }
+  
+  .tech-item {
+    background-color: var(--background-light);
+    padding: 1.2rem;
+    border-radius: 6px;
+    border-left: 3px solid var(--primary-color);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .tech-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  }
+  
+  .tech-item h4 {
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+  }
+  
+  .tech-item p {
+    font-size: 0.9rem;
+    color: var(--gray-dark);
+  }
+  
+  @media (max-width: 600px) {
+    .about-container {
+      padding: 1.5rem;
+      margin: 1rem;
+    }
+    
+    .tech-grid {
+      grid-template-columns: 1fr;
+    }
+  }

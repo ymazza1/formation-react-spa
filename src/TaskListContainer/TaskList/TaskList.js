@@ -1,6 +1,7 @@
 import React from "react";
 import "./TaskList.css";
-import { Trash2, CheckCircle, Circle } from "lucide-react";
+import { Link } from "react-router-dom";
+import { Trash2, CheckCircle, Circle, Info } from "lucide-react";
 
 function TaskList({ tasks, onToggle, onDelete }) {
   // Si aucune tâche n'est disponible
@@ -31,13 +32,23 @@ function TaskList({ tasks, onToggle, onDelete }) {
             )}
           </div>
           
-          <button 
-            className="delete-button"
-            onClick={() => onDelete(task.id)}
-            aria-label="Supprimer la tâche"
-          >
-            <Trash2 size={18} />
-          </button>
+
+          <div className="task-actions">
+            <Link 
+              to={`/task/${task.id}`} 
+              className="view-button"
+              aria-label="Voir les détails"
+            >
+              <Info size={18} />
+            </Link>
+            <button 
+              className="delete-button"
+              onClick={() => onDelete(task.id)}
+              aria-label="Supprimer la tâche"
+            >
+              <Trash2 size={18} />
+            </button>
+          </div>
         </li>
       ))}
     </ul>

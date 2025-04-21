@@ -1,0 +1,281 @@
+.task-details-container {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.08);
+    animation: fadeIn 0.5s ease-out;
+  }
+  
+  .task-details-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--gray-light);
+  }
+  
+  .back-button {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--gray-dark);
+    background-color: var(--gray-light);
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+  
+  .back-button:hover {
+    background-color: var(--gray-medium);
+    color: var(--text-color);
+  }
+  
+  .task-status {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: 500;
+  }
+  
+  .status-completed {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--success-color);
+  }
+  
+  .status-pending {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--gray-dark);
+  }
+  
+  .task-details-content {
+    margin-bottom: 2rem;
+  }
+  
+  .task-title-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+  }
+  
+  .task-title-section h2 {
+    font-size: 1.8rem;
+    color: var(--text-color);
+    font-weight: 600;
+    margin: 0;
+  }
+  
+  .edit-button {
+    background: none;
+    border: none;
+    color: var(--gray-medium);
+    padding: 0.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .edit-button:hover {
+    color: var(--primary-color);
+    background-color: rgba(52, 152, 219, 0.1);
+  }
+  
+  .task-meta {
+    display: flex;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .task-meta-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--gray-dark);
+    font-size: 0.9rem;
+  }
+  
+  .task-description {
+    margin-top: 1.5rem;
+  }
+  
+  .task-description h3 {
+    font-size: 1.2rem;
+    color: var(--primary-color);
+    margin-bottom: 0.8rem;
+    font-weight: 500;
+  }
+  
+  .task-description p {
+    line-height: 1.6;
+    color: var(--text-color);
+  }
+  
+  .task-actions {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .toggle-status-button {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.8rem 1.5rem;
+    border-radius: 4px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .mark-done {
+    background-color: var(--success-color);
+    color: white;
+  }
+  
+  .mark-done:hover {
+    background-color: #219653;
+  }
+  
+  .mark-undone {
+    background-color: var(--gray-light);
+    color: var(--gray-dark);
+  }
+  
+  .mark-undone:hover {
+    background-color: var(--gray-medium);
+    color: var(--text-color);
+  }
+  
+  .loading-spinner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    font-style: italic;
+    color: var(--gray-dark);
+  }
+  
+  .task-not-found {
+    text-align: center;
+    padding: 3rem 1rem;
+  }
+  
+  .task-not-found h2 {
+    color: var(--accent-color);
+    margin-bottom: 1rem;
+  }
+  
+  .task-not-found p {
+    color: var(--gray-dark);
+    margin-bottom: 2rem;
+  }
+  
+  .task-not-found .back-button {
+    display: inline-flex;
+    margin: 0 auto;
+  }
+  
+  /* Styles pour le formulaire d'édition */
+  .task-edit-form {
+    padding: 1.5rem;
+    background-color: var(--background-light);
+    border-radius: 6px;
+    margin-bottom: 1.5rem;
+  }
+  
+  .form-group {
+    margin-bottom: 1.2rem;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: var(--text-color);
+    font-weight: 500;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid var(--gray-medium);
+    border-radius: 4px;
+    font-size: 1rem;
+    font-family: inherit;
+    transition: all 0.3s ease;
+  }
+  
+  .form-group input:focus,
+  .form-group textarea:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.2);
+  }
+  
+  .edit-actions {
+    display: flex;
+    gap: 0.8rem;
+  }
+  
+  .save-button,
+  .cancel-button {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.7rem 1.2rem;
+    border-radius: 4px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .save-button {
+    background-color: var(--primary-color);
+    color: white;
+  }
+  
+  .save-button:hover {
+    background-color: var(--primary-dark);
+  }
+  
+  .cancel-button {
+    background-color: var(--gray-light);
+    color: var(--gray-dark);
+  }
+  
+  .cancel-button:hover {
+    background-color: var(--gray-medium);
+    color: var(--text-color);
+  }
+  
+  @media (max-width: 600px) {
+    .task-details-container {
+      padding: 1.5rem;
+      margin: 1rem;
+    }
+    
+    .task-details-header {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 1rem;
+    }
+    
+    .task-meta {
+      flex-direction: column;
+      gap: 0.8rem;
+    }
+    
+    .edit-actions {
+      flex-direction: column;
+    }
+  }
