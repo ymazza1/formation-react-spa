@@ -4,6 +4,7 @@ import Header from './Header/Header';
 import Footer from './Footer/Footer'
 import TaskListContainer from './TaskListContainer/TaskListContainer'
 import TaskDetails from './pages/TaskDetails/TaskDetails';
+import About from './pages/About/About';
 import NotFound from './pages/NotFound/NotFound';
 
 function App() {
